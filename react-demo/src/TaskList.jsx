@@ -7,7 +7,7 @@ class TaskList extends Component{
         const {title, buttonText, tasks, buttonFunction} =this.props;
         const taskItems = tasks.map((task) => <TaskItems tasks={task} key={task} buttonFunction={buttonFunction}/>);
         return (
-            <div>
+            <div class ='list'>
                 {title}
                 {taskItems}
             </div>

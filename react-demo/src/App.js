@@ -19,11 +19,11 @@ class App extends Component {
                     <input
                         type='text'
                         className='input'
-                        placeholder='Enter To-do Item'
+                        placeholder='Enter task...'
                         value={this.state.task}
                         onChange={(e) => this.setState({task: e.target.value})}
                     />
-                    <button type='submit'>Add To List</button>
+                    <button type='submit'>Add</button>
                 </form>
                 <TaskList title={'Pending Tasks'} buttonText={'Done'} tasks={this.state.todoList} buttonFunction={this.removeTodo} />
                 <TaskList title={'Completed'} buttonText={"Delete"} tasks={['Done']} buttonFunction={this.deleteTodo} />
